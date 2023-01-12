@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <link rel="stylesheet" href="/dist/output.css">
+</head>
+<body>
+    <section class="flex justify-center">
+    <div class= "grid grid-cols-2 bg-green-500 items-center basis-[1000px]">
+        <div class="">
+            <ul class=" ">
+                <li onclick="changeImage('../assets/image/payroll.webp')" class="cursor-pointer py-5 hover:bg-slate-200">
+                    <h1>Payroll</h1>
+                    <p>keey track of everyone's salaries and whether or not they've been paid.Direct deposit not supported.</p>
+                </li>
+                <li onclick="changeImage('../assets/image/expenses.webp')"  class="cursor-pointer py-5 hover:bg-slate-200 focus:bg-slate-200 ">
+                  
+                    <h1>Claim expenses</h1>
+                    <p>All of your receipts organized into one place, as long as you don't mind</p>
+                
+                </li>
+            </ul>
+        </div>
+        <!-- img -->
+        <div class="">
+            <div class="w-[1000px]">
+                <img id="image" class="w-[300%]" src="../assets/image/payroll.webp" alt="">
+            </div>
+        </div>
+           
+        </div>
+   
+</section>
+<script>
+        function changeImage(fileName){
+            let img = document.querySelector("#image")
+            img.setAttribute('src',fileName)
+        }
+</script>
+
+
+
+</body>
+</html>
